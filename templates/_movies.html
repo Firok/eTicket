@@ -1,0 +1,88 @@
+        <div class="container-fluid" id="content" tabindex="-1">
+            <!-- The main page content -->
+
+            <div class="x_panel"> 
+                <div class="x_title">
+                    <h2>Popular Movies</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li class="active"><a href="#">All</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Ewe</a></li>
+                        <li><a href="#">French</a></li>
+                    </ul>
+                </div>
+                <div class="x_content">
+                    <div class="row-fluid">
+                        {% for movie, media in list %}
+                        <div class="col-sm-6 col-md-2" style="height: 320px;">
+                            <a href="{{ movie.get_absolute_url }}">
+                            {% if media %}
+                            <img src="/media/{{ media.image }}" alt="..." style="border-radius: 3px;height: 250px" class="img-responsive">
+                            {% else %}
+                            <img src="/static/images/r1.jpg" alt="..." style="border-radius: 3px" class="img-responsive">
+                            {% endif %}
+                            <div style="height: 50px">
+                                <h4 style="margin-top: 10px;margin-bottom: 5px;">{{ movie.title }}</h4>
+                                <h4 style="margin-bottom: 10px"><small>{{ movie.origin }}</small></h4>
+                            </div>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div style="margin: 0 auto;text-align: center;">
+                            <a href="#" class="btn btn-default" style="padding: 10px 90px 10px 90px;font-weight: 600" role="button">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Special offers</h2>
+                </div>
+                <div class="x_content">
+                    <div class="row-fluid">
+                        <div class="col-md-6 col-md-6 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="..." alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-6 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="..." alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="x_panel"> 
+                <div class="x_title">
+                    <h2>Features Movies</h2>
+                </div>
+                <div class="x_content">
+                    <div class="col-md-3 col-sm-6 col-md-12">
+                        <div class="thumbnail">
+                            <img src="..." alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-md-12">
+                        <div class="thumbnail">
+                            <img src="..." alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-md-12">
+                        <div class="thumbnail">
+                            <img src="..." alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-md-12">
+                        <div class="thumbnail">
+                            <img src="..." alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

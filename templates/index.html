@@ -1,0 +1,19 @@
+{% extends "__base.html" %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="/static/css/scrolling-search-index.css" />
+{% endblock %}
+
+{% block content %}
+	{% include "_login_dialog.html" %}
+	{% include "_slider.html" %}
+	{% include "_search_box.html" %}
+	{% include "_search_dialog.html" %}
+{% endblock %}
+
+{% block body_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="/static/js/slider.js"></script>
+	<script type="text/javascript" src="/static/js/scrolling-search-index.js"></script>
+{% endblock %}

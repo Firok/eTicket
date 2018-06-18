@@ -1,0 +1,25 @@
+{% extends "__base.html" %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="/static/css/scrolling-search-index.css" />
+    <link href="/static/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/static/css/jquery.seat-charts.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/static/css/seats-style.css" rel="stylesheet" type="text/css" media="all"/>
+{% endblock %}
+
+{% block content %}
+	{% include "_login_dialog.html" %}
+	{% include "_slider.html" %}
+	{% include "_search_box.html" %}
+	{% include "_search_dialog.html" %}
+    {% include "_movie_select_show.html" with movie=movie %}
+{% endblock %}
+
+{% block body_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="/static/js/slider.js"></script>
+	<script type="text/javascript" src="/static/js/scrolling-search-index.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.seat-charts.min.js"></script>
+    <script type="text/javascript" src="/static/js/movie-select-show.js"></script>
+{% endblock %}

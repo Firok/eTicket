@@ -1,0 +1,99 @@
+
+		<div class="header-top-strip">
+            <nav class="navbar navbar-default" role="navigation">
+                <div id="nav-header"  class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle collapsed" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="home" href="index.html" class="navbar-brand"><i class="fa fa-home"></i></a>
+                </div><!-- end navbar-header -->
+
+                <div id="defaultmenu" class="navbar-collapse collapse primary">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <!--                            <li class="active"><a href="index.html">Home</a></li>	-->
+                            <!-- Mega Menu -->
+                            <li>
+                                <a href="{% url 'movies-index' %}">MOVIES</a>
+                            </li>
+                            <li>
+                                <a href="event.html">EVENTS</a>
+                            </li>
+                            <li>
+                                <a href="#">PLAYS</a>
+                            </li>
+                            <li>
+                                <a href="#">SPORTS</a>
+                            </li>
+                            <li>
+                                <a href="#">BUS</a>
+                            </li>
+                            <li>
+                                <a href="#">RECHARGE</a>
+                            </li>
+                        </ul><!-- end nav navbar-nav -->
+
+
+                        <ul class="nav navbar-nav navbar-right primary-right">
+                            <li>
+                                <a  class="play-icon popup-with-zoom-anim" href="support.html">OFFERS</a>
+                            </li>
+                            <li>
+                                <a  class="play-icon popup-with-zoom-anim" href="support.html">SUPPORT</a>
+                            </li>
+                            <li>
+                                <a data-toggle="modal" href="#myModal">SIGN IN</a>
+                            </li>
+                            <li class="dropdown tasks-menu">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"><i style="color: white" class="fa fa-map-marker"></i>SELECT A REGION</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu-block">
+                                            <li>
+                                                <form class="form-horizontal">
+                                                    <div class="input-group">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-md-offset-1">
+                                                                <input style="padding: 20px;margin-top: 25px;margin-left: 20px;margin-right: 20px;margin-bottom: 0px;" class="form-control" placeholder="ENTER YOUR CITY" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer">
+                                        <span>TOP SEARCHED</span>
+                                        <ul class="menu-block">
+                                            <li>
+                                                <a>
+                                                    ACCRA,
+                                                </a>
+                                                <a>
+                                                    KUMASSI
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a style="color: red" href="#">ALL CITIES</a>
+                                            </li>
+                                        </ul> 
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!-- end nav navbar-nav navbar-right -->
+                    </div>
+                </div><!-- end #navbar-collapse-1 -->
+
+                <div id="nav-secondary" class="secondary" data-spy="affix" data-offset-top="1850">
+
+                    <div class="brand">
+                        <a class="logo" href="index.html"><h1>My Show</h1></a>
+
+                    </div>
+				</div>
+            </nav>
+		</div>

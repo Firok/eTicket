@@ -1,0 +1,83 @@
+/* Note: Try to remove the following lines to see the effect of CSS positioning */
+            .affixed {
+                top: 120px; /* Set the top position of pinned element */
+                z-index: 9999;
+                width: 100%;
+                padding-top: 10px;
+                position: fixed;
+            }
+
+            .affixed-brand {
+                top: 0px; /* Set the top position of pinned element */
+                z-index: 9999;
+                //padding-top: 10px;
+                position: fixed;
+            }
+
+            .affix + .container-fluid {
+                padding-top: 70px;
+            }
+
+            .affix-top {
+                top: 120px; /* Set the top position of pinned element */
+                z-index: 9999;
+                width: 100%;
+                padding-top: 10px;
+            }
+
+            .affix-bottom {
+                position: absolute;
+                width: 100%;  
+            }
+
+            @media (min-width: 1200px) {
+                .affix {
+                    width: 100%;
+                }         
+
+                .affix-bottom {
+                    width: 100%;
+                }
+            }
+            #search-box-content.affix{
+                top: 160px!important; /* Set the top position of pinned element */
+                z-index: 9999;
+                width: 100%;
+                padding-top: 10px;
+            }
+
+            #defautmenu.affix{
+                top: 0px; /* Set the top position of pinned element */
+                z-index: 9999;
+                width: 100%;
+                padding-top: 0px;
+            }
+
+            #search-box-content.affix-bottom{
+                position: absolute;
+                top: 120px!important; /* Set the top position of pinned element */
+                z-index: 9999;
+                width: 100%;
+                padding-top: 10px;
+            }
+
+            #nav-secondary.affix{
+                top: 0px!important; /* Set the top position of pinned element */
+                z-index: 9999;
+                width: 100%;
+                padding-top: 10px
+            }
+
+            /* This class is added on scroll */
+            .fixed {
+                position: fixed; 
+                z-index: 9999;
+                height: 40px;
+                width: 100%;
+                //transition: transform .2s ease;
+            }
+
+            .top-affix{
+                top: 120px;
+                z-index: 200;
+            }
